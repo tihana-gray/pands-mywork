@@ -13,3 +13,20 @@ by Tihana Gray
 - Step 4: Printing the final result (€2.45)
 
 ## Week 03
+
+This Python program masks account numbers by replacing all but the last four digits with 'X'. 
+
+It consists of two versions:
+
+First Version: Handles exactly 10-digit account numbers, masking the first six digits and showing only the last four.
+
+Updated Version: Supports account numbers of any length, masking all but the last four digits.
+
+How It Works
+
+The program prompts the user to input an account number.
+
+Depending on the version:
+If the input is exactly 10 digits, it replaces the first 6 digits with 'X'.
+If the input is of any length greater than 4, it replaces all but the last four digits with 'X'.
+The modified account number is then displayed.
