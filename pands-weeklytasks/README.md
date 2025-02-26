@@ -22,7 +22,7 @@ First Version: Handles exactly 10-digit account numbers, masking the first six d
 
 Updated Version: Supports account numbers of any length, masking all but the last four digits.
 
-How It Works
+**How It Works**
 
 The program prompts the user to input an account number.
 
