@@ -63,3 +63,6 @@ https://www.w3schools.com/python/python_operators.asp
 
 ![alt text](<Screenshot 2025-03-02 134704.png>)
 
+## Week 04
+
+
