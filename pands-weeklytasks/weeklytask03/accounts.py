@@ -9,7 +9,7 @@ if len(account_number) == 10:
     print ("Please enter a 10-digit account number.")
 
 # Masking the account number
-masked_account_number = account_number[-4:].rjust(10, '*')
+masked_account_number = account_number[-4:].rjust(10, 'X')
 print(masked_account_number)
 
 # ------------------------------------------------------------------------------------------------------------

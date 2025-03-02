@@ -7,9 +7,21 @@ by Tihana Gray
 1. Writing a program called bank.py 
 2. Requirement: The program should: Prompt the user and read in two money amounts (in cent); Add the two amounts; Print out the answer in a human readable format with a euro sign and decimal point between the euro and cent of the amount 
 3. I created a program done in 4 steps:
-- Step 1: The values are stored in amount1 and amount2. The program prompts the user to enter 2 money amounts in cents, takes the input as a string and converts it into an integer. 
+- Step 1: The values are stored in amount1 and amount2. The program prompts the user to enter 2 money amounts in cents, takes the input as a string and converts it into an integer.
+`input()` is used to take user input as a string.
+`int()` converts the input into an integer because it needs a numerical value. 
+Source: https://www.geeksforgeeks.org/python-input-function/
+https://docs.python.org/3/library/functions.html#int
+
 - Step 2: The 2 values are added together. The sum is stored in the total_cents variable.
+Source: https://www.w3schools.com/python/python_howto_add_two_numbers.asp
+
 - Step 3: Converting cents to euros and formating the output. 
+The total cents are converted to euros by dividing by 100. The result is formatted to two decimal places using an f-string to get the right currency format.
+Source: https://stackoverflow.com/questions/33861401/convert-cents-to-euro
+https://stackoverflow.com/questions/1995615/how-can-i-format-a-decimal-to-always-show-2-decimal-places
+https://www.w3schools.com/python/python_string_formatting.asp
+
 - Step 4: Printing the final result (€2.45)
 
 ![alt text](<Screenshot 2025-03-02 131955.png>)
@@ -26,9 +38,28 @@ Updated Version: Supports account numbers of any length, masking all but the las
 
 **How It Works**
 
-The program prompts the user to input an account number.
+1. Getting user input: using `input()` function to prompt the account number. It also converts it to a string.
+Source: https://pynative.com/python-input-function-get-user-input/
+https://stackoverflow.com/questions/45229343/program-in-python-that-will-prompt-the-user-to-enter-an-account-number-consists
 
-Depending on the version:
-If the input is exactly 10 digits, it replaces the first 6 digits with 'X'.
-If the input is of any length greater than 4, it replaces all but the last four digits with 'X'.
-The modified account number is then displayed.
+2. Validating input length: making sure that the length of input is exactly 10 characters.
+Source: https://docs.python.org/3/library/functions.html#len
+https://realpython.com/len-python-function/
+
+3. Used string slicing to extract the last 4 characters and used `rjust()` to pad the masked number.
+Source: https://www.geeksforgeeks.org/string-slicing-in-python/
+https://www.w3schools.com/python/ref_string_rjust.asp
+https://www.geeksforgeeks.org/python-string-rjust-method/
+
+**Extra:**
+
+1. Using `len()` to return the numbers in the string. Built in function `>` ensures that the number is larger than 4. 
+2. Creating a masked version that replacing all but the last 4 characters.
+3. If the account number is 4 or less characters it displays error message. 
+Sources: https://www.geeksforgeeks.org/string-rjust-ljust-python/
+https://docs.python.org/3/library/stdtypes.html
+https://www.geeksforgeeks.org/string-slicing-in-python/#extract-characters-using-negative-indices
+https://www.w3schools.com/python/python_operators.asp
+
+![alt text](<Screenshot 2025-03-02 134704.png>)
+
