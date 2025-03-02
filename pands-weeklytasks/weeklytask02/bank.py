@@ -15,3 +15,4 @@ formatted_total = f"€{total_euros:.2f}"
 
 # Step 4
 print(f"The total amount is {formatted_total}.")
+

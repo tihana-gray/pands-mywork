@@ -12,4 +12,6 @@ by Tihana Gray
 - Step 3: Converting cents to euros and formating the output. 
 - Step 4: Printing the final result (€2.45)
 
+![alt text](<Screenshot 2025-03-02 131955.png>)
+
 ## Week 03
