@@ -65,4 +65,29 @@ https://www.w3schools.com/python/python_operators.asp
 
 ## Week 04
 
+- A function is defined as `collatz` that takes a single parameter `n`, defined with using `def` keyword.
+Source: https://www.w3schools.com/python/python_functions.asp
+- The while loop `while n != 1` executes as long as `n != 1` is `True`. It runs until `n` becomes 1.
+Source: https://www.w3schools.com/python/python_while_loops.asp
+https://realpython.com/python-while-loop/
+- The value `n` is printed `print(n, end=" ")` followed by space to keep the output in the same line.
+Source: https://www.w3schools.com/python/python_functions.asp
+- An `if` statement is used to check if `n` is even or odd: 
+  if even: `n % 2 == 0` that means `n` is divided by 2 using integer division `//` ensuring the result is integer.
+  else (if odd): `n` is multiplied by 3 and added 1
+Source: https://www.w3schools.com/python/python_conditions.asp 
+https://realpython.com/python-while-loop/
+- The loop exits when `n` is 1, the final value of `n` is printed.
+
+**User Input:**
+- User input is a positive integer. The `input()` function reads a line from input and the converts to integer `int()`
+Source: https://www.w3schools.com/python/ref_func_input.asp
+- If the integer is positive, it refers to `collatz` function. If not, the user is prompted to enter a positive integer.
+Source: https://www.w3schools.com/python/python_conditions.asp
+- Exception `except` is added to block potential errors with different values. if `ValueError` occurs, the user is prompted
+to enter a positive integer.
+Source: https://www.geeksforgeeks.org/python-exception-handling/
+https://www.w3schools.com/python/python_try_except.asp
+
+![alt text](<Screenshot 2025-03-03 094434.png>)
 
