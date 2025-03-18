@@ -91,3 +91,19 @@ https://www.w3schools.com/python/python_try_except.asp
 
 ![alt text](<Screenshot 2025-03-03 094434.png>)
 
+## Week 05
+
+- First the `datetime` modul is imported. It is needed to show the current day.
+Source: https://docs.python.org/3/library/datetime.html
+- Next, `weekdays` tuple is set to contain names of working days and 'weekends` tuple is for weekend days.
+Source: https://www.w3schools.com/python/python_tuples.asp, https://www.w3schools.com/python/gloss_python_tuple.asp, https://www.datacamp.com/tutorial/python-tuples-tutorial  
+- Dictionary mapping helps adding numbers to day names. Integers are created for each weekdays, further creating a loop using numbers as keys.
+Source: https://realpython.com/python-dicts/, https://stackoverflow.com/questions/36341484/get-day-name-from-weekday-int
+- The `datetime.now().weekday()` function is used to return the integer value corresponding to the specified day of the week.
+Source: https://www.geeksforgeeks.org/weekday-function-of-datetime-date-class-in-python/
+- Next step retrieves the day name from `day_map` using the integer from `weekday()` to convert numbers into words.
+Source: https://realpython.com/python-dicts/, https://www.w3schools.com/python/python_dictionaries.asp, https://www.w3schools.com/python/python_ref_dictionary.asp
+- By using a set item `if today_name in set(weekdays)`the day of the week is checked. Used approach is Python Set, Python Loop and checking if item in a set exists.
+Source: https://www.w3schools.com/python/gloss_python_check_if_set_item_exists.asp, https://www.w3schools.com/python/python_sets.asp, https://www.w3schools.com/python/python_sets_join.asp
+
+![alt text](<Screenshot 2025-03-18 211432.png>)
