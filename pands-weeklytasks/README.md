@@ -153,3 +153,50 @@ https://www.w3schools.com/python/python_sets.asp\
 https://www.w3schools.com/python/python_sets_join.asp
 
 ![weekday checker output](<Screenshot 2025-03-18 211432.png>)
+
+---
+
+## 📅 Week 06
+
+Writing a program that takes a positive floating-point number as input and outputs an approximation of its square root.
+
+1. **Start:**
+- `def sqrt(number):`is used to calculate the square root of a given number.
+- `guess = number / 2`starts with the initial guess for the square root by dividing the number by 2.
+- `tolerance = 0.00001`sets the precision.\
+📚 Source: https://realpython.com/python-square-root-function/\
+
+2. **Loop:**
+- ` while abs(guess * guess - number) > tolerance:` Loop until the square of the guess is close enough to the original number. `abs()` gives the absolute value.\
+- `guess = (guess + number / guess) / 2` improves the guess by averaging it with the division result.\
+📚 Source: https://www.w3schools.com/python/python_while_loops.asp\
+https://www.w3schools.com/python/ref_func_abs.asp\
+https://stackoverflow.com/questions/35858135/guessing-number-game-python
+
+3. **Defining the function:**
+- `def main():` defines the main() function.
+📚 Source: https://realpython.com/python-main-function/
+
+4. **Errors and exceptions:**
+- `try:` used to catch errors.
+- `number = float(input("Please enter a positive number: "))` prompts the user for input and converts it to a float.
+- `if number <= 0:` checks that the number is greater than zero. Square roots of zero or negative numbers aren't valid.
+- `print("Number must be positive.")` prints an error message if the number is not valid.
+- `return` stop the program early by returning from the function.
+- `result = sqrt(number)` using custom `sqrt` function to calculate the square root.
+- `print(f"The square root of {number} is approx. {result:.1f}")` prints the result using an f-string and rounds it to 1 decimal place.
+- `except ValueError:` prevents invalid inputs that can't be converted into a float.
+- `print("Invalid input. Please enter a number.")` informs the user if the input is invalid.\
+📚 Source: https://realpython.com/python-main-function/\
+https://docs.python.org/3/tutorial/errors.html\
+https://www.w3schools.com/python/ref_func_input.asp\
+https://www.w3schools.com/python/ref_func_float.asp#:~:text=Definition%20and%20Usage,into%20a%20floating%20point%20number.\
+
+
+5. **Final stage:**
+- `if __name__ == "__main__":` ensures that main() is only run if the script is executed directly, not imported.
+- `main()` calls the `main()` function to start the program.
+📚 Source: https://realpython.com/python-main-function/
+
+![positive number answer](<Screenshot 2025-04-02 233124.png>)
+![negative number answer](<Screenshot 2025-04-02 233148.png>)
