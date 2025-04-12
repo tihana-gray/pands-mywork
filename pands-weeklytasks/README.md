@@ -262,7 +262,7 @@ Writing a program that reads in a text file and outputs the number of e's it con
         sys.exit(f"Error reading file: {e}")`
 - Implements the `count_es()` function.
 - Prints the number of e's.
-- Scans for errors.
+- Scans for errors.\
 📚 Source: 
 - https://www.w3schools.com/python/python_try_except.asp
 - https://realpython.com/python-exceptions/
@@ -271,7 +271,7 @@ Writing a program that reads in a text file and outputs the number of e's it con
 
 6. **Program execution**
 - This step ensures that the script only runs `main()` if it is run directly (not imported as a module).
-- Also prevents execution when the file is imported elsewhere.
+- Also prevents execution when the file is imported elsewhere.\
 📚 Source: 
 - https://realpython.com/if-name-main-python/
 - https://realpython.com/python-main-function/
@@ -280,7 +280,7 @@ Writing a program that reads in a text file and outputs the number of e's it con
 ![Output](Screenshot_weeklytask07.png)
 
 **Extra:**
-- I found the "Moby Dick" text file on Google.
+- I found the "Moby Dick" text file on Google.\
 📚 Source: https://www.gutenberg.org/ebooks/2701
 - I downloaded the "Plain Text UTF-8" file and renamed it into `moby-dick.txt`
 - Placed it in the same folder with the working file `es.py`
