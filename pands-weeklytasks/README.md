@@ -33,7 +33,7 @@ https://www.w3schools.com/python/python_string_formatting.asp\
 4. **Final Output:** 
 - Printing the final result (€2.45)
 
-![bank.py output](<Screenshot 2025-03-02 131955.png>)
+![bank.py output](<Screenshot_weeklytask02.png>)
 
 ---
 
@@ -72,7 +72,7 @@ https://docs.python.org/3/library/stdtypes.html\
 https://www.geeksforgeeks.org/string-slicing-in-python/#extract-characters-using-negative-indices\
 https://www.w3schools.com/python/python_operators.asp
 
-![terminal output](<Screenshot 2025-03-02 134704.png>)
+![terminal output](<Screenshot_weeklytask03.png>)
 
 ---
 
@@ -113,7 +113,7 @@ to enter a positive integer.\
 📚 Source: https://www.geeksforgeeks.org/python-exception-handling/\
 https://www.w3schools.com/python/python_try_except.asp
 
-![collatz output](<Screenshot 2025-03-03 094434.png>)
+![collatz output](<Screenshot_weeklytask04.png>)
 
 ---
 
@@ -152,7 +152,7 @@ Source: https://www.w3schools.com/python/gloss_python_check_if_set_item_exists.a
 https://www.w3schools.com/python/python_sets.asp\ 
 https://www.w3schools.com/python/python_sets_join.asp
 
-![weekday checker output](<Screenshot 2025-03-18 211432.png>)
+![weekday checker output](<Screenshot_weeklytask05.png>)
 
 ---
 
@@ -198,5 +198,63 @@ https://www.w3schools.com/python/ref_func_float.asp#:~:text=Definition%20and%20U
 - `main()` calls the `main()` function to start the program.
 📚 Source: https://realpython.com/python-main-function/
 
-![positive number answer](<Screenshot 2025-04-02 233124.png>)
-![negative number answer](<Screenshot 2025-04-02 233148.png>)
+![positive number answer](<Screenshot_weeklytask06-1.png>)
+![negative number answer](<Screenshot_weeklytask06-2.png>)
+
+---
+
+## 📅 Week 07
+
+Writing a program that reads in a text file and outputs the number of e's it contains.
+
+1. **Reading the filename from the command line**
+- Importing the necessary modules.
+- `sys` allows the script to access command-line arguments (like the filename).
+- `os` provides a way to interact with the file system, like checking if a file exists.\
+📚 Source: https://docs.python.org/3/library/sys.html\
+https://docs.python.org/3/library/os.path.html#os.path.isfile
+
+2. **Defining the function**
+- `count_es()` function opens the file safely using a `with open()`.
+- Reads the entire content of the file into a string.
+- Uses `.count('e')` to count how many times lowercase e appears.\
+📚 Source: https://www.w3schools.com/python/python_file_handling.asp\
+https://www.w3schools.com/python/python_file_handling.asp
+
+3. **Further defining**
+- `def main()` checks if the filename is provided. If not, shows an error message and exits.
+- `if len(sys.argv) < 2` and `sys.exit` make sure that the program doesn't crash if `sys.argv[1]`is missing.\
+📚 Source: https://realpython.com/python-command-line-arguments/\
+https://realpython.com/python-main-function/
+
+4. **Storing and validating the filename**
+- `sys.argv[1]` contains any and all Python command-line arguments passed to the program.
+- `filename = sys.argv[1]` extracts the filename and checks if the file is in the folder.
+- ' if not filename.endswith(".txt")` checks that the file has the right extension.\
+📚 Source: https://docs.python.org/3/library/os.path.html#os.path.isfile\
+https://www.w3schools.com/python/python_file_handling.asp\
+https://www.w3schools.com/python/python_file_open.asp
+
+5. **Reading the file**
+`    try:
+        print(count_es(filename))
+    except Exception as e:
+        sys.exit(f"Error reading file: {e}")`
+- Implements the `count_es()` function.
+- Prints the number of e's.
+- Scans for errors.
+📚 Source: https://www.w3schools.com/python/python_try_except.asp\
+https://realpython.com/python-exceptions/\
+https://realpython.com/python-built-in-exceptions/\
+https://docs.python.org/3/tutorial/errors.html
+
+6. **Program execution**
+- This step ensures that the script only runs `main()` if it is run directly (not imported as a module).
+- Also prevents execution when the file is imported elsewhere.
+📚 Source: https://realpython.com/if-name-main-python/\
+https://realpython.com/python-main-function/\
+https://docs.python.org/3/library/__main__.html
+
+![Output](Screenshot_weeklytask07.png)
+
+

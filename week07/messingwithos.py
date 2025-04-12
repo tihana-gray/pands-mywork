@@ -3,13 +3,17 @@
 
 import os
 
+file_path = r"C:\Users\tihan\OneDrive\Desktop\ATU\pands\pands-mywork\week07\messingwithfiles.py"
+
 FILENAME = "messingwithfiles.py"
 
-if os.path.exists(FILENAME):
-    with open(FILENAME, "r") as f:
+
+if os.path.exists(file_path):
+    with open(file_path, "r") as f:
         for line in f:
             print(line, end='')
 else:
-    print (FILENAME, "does not exist")
+    print(file_path, "does not exist")
 
+os.remove("data2.txt")
 
