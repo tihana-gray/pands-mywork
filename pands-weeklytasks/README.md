@@ -16,19 +16,19 @@ Requirement: The program should: Prompt the user and read in two money amounts (
 - The values are stored in amount1 and amount2. The program prompts the user to enter 2 money amounts in cents, takes the input as a string and converts it into an integer.\
 `input()` is used to take user input as a string.\
 `int()` converts the input into an integer because it needs a numerical value.\
-📚 Source: 
+📚 Reference: 
 - https://www.geeksforgeeks.org/python-input-function/
 - https://docs.python.org/3/library/functions.html#int
 
 2. **Adding the Values:** 
 - The 2 values are added together. The sum is stored in the total_cents variable.\
-📚 Source: 
+📚 Reference: 
 - https://www.w3schools.com/python/python_howto_add_two_numbers.asp
 
 3. **Formatting as Euros:** 
 - Converting cents to euros and formating the output. 
 The total cents are converted to euros by dividing by 100. The result is formatted to two decimal places using an f-string to get the right currency format.\
-📚 Source: 
+📚 Reference: 
 - https://stackoverflow.com/questions/33861401/convert-cents-to-euro
 - https://stackoverflow.com/questions/1995615/how-can-i-format-a-decimal-to-always-show-2-decimal-places
 - https://www.w3schools.com/python/python_string_formatting.asp
@@ -51,19 +51,19 @@ It consists of two versions:\
 
 1. **User Input:**
 - Using `input()` function to prompt the account number. It also converts it to a string.
-📚 Source: 
+📚 Reference: 
 - https://pynative.com/python-input-function-get-user-input/
 - https://stackoverflow.com/questions/45229343/program-in-python-that-will-prompt-the-user-to-enter-an-account-number-consists
 
 2. **Validating input length:**
 - Making sure that the length of input is exactly 10 characters.\
-📚 Source: 
+📚 Reference: 
 - https://docs.python.org/3/library/functions.html#len
 - https://realpython.com/len-python-function/
 
 3. **Masking:**
 - Used string slicing to extract the last 4 characters and used `rjust()` to pad the masked number.\
-📚 Source: 
+📚 Reference: 
 - https://www.geeksforgeeks.org/string-slicing-in-python
 - https://www.w3schools.com/python/ref_string_rjust.asp
 - https://www.geeksforgeeks.org/python-string-rjust-method
@@ -73,7 +73,7 @@ It consists of two versions:\
 1. Using `len()` to return the numbers in the string. Built in function `>` ensures that the number is larger than 4. 
 2. Creating a masked version that replacing all but the last 4 characters.
 3. If the account number is 4 or less characters it displays error message.\ 
-📚 Sources: 
+📚 Reference: 
 - https://www.geeksforgeeks.org/string-rjust-ljust-python/
 - https://docs.python.org/3/library/stdtypes.html
 - https://www.geeksforgeeks.org/string-slicing-in-python/#extract-characters-using-negative-indices
@@ -91,35 +91,35 @@ The program ends if the current value is one.
 
 1. **Colatz:**
 - A function is defined as `collatz` that takes a single parameter `n`, defined with using `def` keyword.\
-📚 Source: https://www.w3schools.com/python/python_functions.asp
+📚 Reference: https://www.w3schools.com/python/python_functions.asp
 
 2. **Loop:**
 - The while loop `while n != 1` executes as long as `n != 1` is `True`. It runs until `n` becomes 1.\
-📚 Source: 
+📚 Reference: 
 - https://www.w3schools.com/python/python_while_loops.asp
 - https://realpython.com/python-while-loop/
 
 3. **Value:**
 - The value `n` is printed `print(n, end=" ")` followed by space to keep the output in the same line.\
-📚 Source: https://www.w3schools.com/python/python_functions.asp
+📚 Reference: https://www.w3schools.com/python/python_functions.asp
 
 4. **Conditions:**
 - An `if` statement is used to check if `n` is even or odd:\
   if even: `n % 2 == 0` that means `n` is divided by 2 using integer division `//` ensuring the result is integer.\
   else (if odd): `n` is multiplied by 3 and added 1.\
-📚 Source: 
+📚 Reference: 
 - https://www.w3schools.com/python/python_conditions.asp
 - https://realpython.com/python-while-loop/
 - The loop exits when `n` is 1, the final value of `n` is printed.
 
 ### User Input:
 - User input is a positive integer. The `input()` function reads a line from input and the converts to integer `int()`\
-📚 Source: https://www.w3schools.com/python/ref_func_input.asp
+📚 Reference: https://www.w3schools.com/python/ref_func_input.asp
 - If the integer is positive, it refers to `collatz` function. If not, the user is prompted to enter a positive integer.\
-📚 Source: https://www.w3schools.com/python/python_conditions.asp
+📚 Reference: https://www.w3schools.com/python/python_conditions.asp
 - Exception `except` is added to block potential errors with different values. if `ValueError` occurs, the user is prompted
 to enter a positive integer.\
-📚 Source: 
+📚 Reference: 
 - https://www.geeksforgeeks.org/python-exception-handling/
 - https://www.w3schools.com/python/python_try_except.asp
 
@@ -133,35 +133,35 @@ Writing a program that outputs whether or not today is a weekday.
 
 1. **Datetime:**
 - First the `datetime` modul is imported. It is needed to show the current day.\
-📚 Source: https://docs.python.org/3/library/datetime.html
+📚 Reference: https://docs.python.org/3/library/datetime.html
 
 2. **Tuple:**
 - Next, `weekdays` tuple is set to contain names of working days and 'weekends` tuple is for weekend days.\
-📚 Source: 
+📚 Reference:
 - https://www.w3schools.com/python/python_tuples.asp
 - https://www.w3schools.com/python/gloss_python_tuple.asp
 - https://www.datacamp.com/tutorial/python-tuples-tutorial
 
 3. **Dictionary:**
 - Dictionary mapping helps adding numbers to day names. Integers are created for each weekdays, further creating a loop using numbers as keys.\
-📚 Source: 
+📚 Reference: 
 - https://realpython.com/python-dicts/
 - https://stackoverflow.com/questions/36341484/get-day-name-from-weekday-int
 
 4. **Weekday function:**
 - The `datetime.now().weekday()` function is used to return the integer value corresponding to the specified day of the week.\
-📚 Source: https://www.geeksforgeeks.org/weekday-function-of-datetime-date-class-in-python/
+📚 Reference: https://www.geeksforgeeks.org/weekday-function-of-datetime-date-class-in-python/
 
 5. **Conversion:**
 - Next step retrieves the day name from `day_map` using the integer from `weekday()` to convert numbers into words.\
-📚 Source: 
+📚 Reference:
 - https://realpython.com/python-dicts/
 - https://www.w3schools.com/python/python_dictionaries.asp
 - https://www.w3schools.com/python/python_ref_dictionary.asp
 
 6. **Output:**
 - By using a set item `if today_name in set(weekdays)`the day of the week is checked. Used approach is Python Set, Python Loop and checking if item in a set exists.\
-📚 Source: 
+📚 Reference:
 - https://www.w3schools.com/python/gloss_python_check_if_set_item_exists.asp
 - https://www.w3schools.com/python/python_sets.asp
 - https://www.w3schools.com/python/python_sets_join.asp
@@ -178,19 +178,19 @@ Writing a program that takes a positive floating-point number as input and outpu
 - `def sqrt(number):`is used to calculate the square root of a given number.
 - `guess = number / 2`starts with the initial guess for the square root by dividing the number by 2.
 - `tolerance = 0.00001`sets the precision.\
-📚 Source: https://realpython.com/python-square-root-function/\
+📚 Reference: https://realpython.com/python-square-root-function/\
 
 2. **Loop:**
 - ` while abs(guess * guess - number) > tolerance:` Loop until the square of the guess is close enough to the original number. `abs()` gives the absolute value.\
 - `guess = (guess + number / guess) / 2` improves the guess by averaging it with the division result.\
-📚 Source: 
+📚 Reference: 
 - https://www.w3schools.com/python/python_while_loops.asp
 - https://www.w3schools.com/python/ref_func_abs.asp
 - https://stackoverflow.com/questions/35858135/guessing-number-game-python
 
 3. **Defining the function:**
 - `def main():` defines the main() function.
-📚 Source: https://realpython.com/python-main-function/
+📚 Reference: https://realpython.com/python-main-function/
 
 4. **Errors and exceptions:**
 - `try:` used to catch errors.
@@ -202,7 +202,7 @@ Writing a program that takes a positive floating-point number as input and outpu
 - `print(f"The square root of {number} is approx. {result:.1f}")` prints the result using an f-string and rounds it to 1 decimal place.
 - `except ValueError:` prevents invalid inputs that can't be converted into a float.
 - `print("Invalid input. Please enter a number.")` informs the user if the input is invalid.\
-📚 Source: 
+📚 Reference:
 - https://realpython.com/python-main-function/
 - https://docs.python.org/3/tutorial/errors.html
 - https://www.w3schools.com/python/ref_func_input.asp
@@ -212,7 +212,7 @@ Writing a program that takes a positive floating-point number as input and outpu
 5. **Final stage:**
 - `if __name__ == "__main__":` ensures that main() is only run if the script is executed directly, not imported.
 - `main()` calls the `main()` function to start the program.
-📚 Source: https://realpython.com/python-main-function/
+📚 Reference: https://realpython.com/python-main-function/
 
 ![positive number answer](<Screenshot_weeklytask06-1.png>)
 ![negative number answer](<Screenshot_weeklytask06-2.png>)
@@ -227,7 +227,7 @@ Writing a program that reads in a text file and outputs the number of e's it con
 - Importing the necessary modules.
 - `sys` allows the script to access command-line arguments (like the filename).
 - `os` provides a way to interact with the file system, like checking if a file exists.\
-📚 Source: 
+📚 Reference:
 - https://docs.python.org/3/library/sys.html
 - https://docs.python.org/3/library/os.path.html#os.path.isfile
 
@@ -235,14 +235,14 @@ Writing a program that reads in a text file and outputs the number of e's it con
 - `count_es()` function opens the file safely using a `with open()`.
 - Reads the entire content of the file into a string.
 - Uses `.count('e')` to count how many times lowercase e appears.\
-📚 Source: 
+📚 Reference:
 - https://www.w3schools.com/python/python_file_handling.asp
 - https://www.w3schools.com/python/python_file_handling.asp
 
 3. **Further defining**
 - `def main()` checks if the filename is provided. If not, shows an error message and exits.
 - `if len(sys.argv) < 2` and `sys.exit` make sure that the program doesn't crash if `sys.argv[1]`is missing.\
-📚 Source: 
+📚 Reference:
 - https://realpython.com/python-command-line-arguments/
 - https://realpython.com/python-main-function/
 
@@ -250,7 +250,7 @@ Writing a program that reads in a text file and outputs the number of e's it con
 - `sys.argv[1]` contains any and all Python command-line arguments passed to the program.
 - `filename = sys.argv[1]` extracts the filename and checks if the file is in the folder.
 - ' if not filename.endswith(".txt")` checks that the file has the right extension.\
-📚 Source: 
+📚 Reference: 
 - https://docs.python.org/3/library/os.path.html#os.path.isfile
 - https://www.w3schools.com/python/python_file_handling.asp
 - https://www.w3schools.com/python/python_file_open.asp
@@ -263,7 +263,7 @@ Writing a program that reads in a text file and outputs the number of e's it con
 - Implements the `count_es()` function.
 - Prints the number of e's.
 - Scans for errors.\
-📚 Source: 
+📚 Reference:
 - https://www.w3schools.com/python/python_try_except.asp
 - https://realpython.com/python-exceptions/
 - https://realpython.com/python-built-in-exceptions/
@@ -272,7 +272,7 @@ Writing a program that reads in a text file and outputs the number of e's it con
 6. **Program execution**
 - This step ensures that the script only runs `main()` if it is run directly (not imported as a module).
 - Also prevents execution when the file is imported elsewhere.\
-📚 Source: 
+📚 Reference:
 - https://realpython.com/if-name-main-python/
 - https://realpython.com/python-main-function/
 - https://docs.python.org/3/library/__main__.html
@@ -285,4 +285,63 @@ Writing a program that reads in a text file and outputs the number of e's it con
 - I downloaded the "Plain Text UTF-8" file and renamed it into `moby-dick.txt`
 - Placed it in the same folder with the working file `es.py`
 
+---
+
+## 📅 Week 08
+
+Writing a program that is called `plottask.py` that displays:
+- a histogram of a normal distribution of a 1000 values with a mean of 5 and standard deviation of 2, 
+- and a plot of the function  h(x)=x3 in the range 0 to 10, on the one set of axes.
+
+1. **Start**
+- Importing `numpy` for the numerical part and `matplotlib.pyplot` for creating plots.\
+📚 Reference:
+- https://matplotlib.org/stable/api/pyplot_summary.html
+
+2. **Mean and Normal Distribution**
+- Generating 1000 random values from a normal distribution.\
+📚 Reference:
+- https://numpy.org/doc/stable/reference/random/generated/numpy.random.normal.html
+- https://www.w3schools.com/python/python_ml_standard_deviation.asp
+- https://stackoverflow.com/questions/28643993/get-random-numbers-within-one-standard-deviation
+
+3. **Values and Computing**
+- The `np.linspace()` function generates evenly spaced numbers over a specified interval.
+- Created an array of 400 evenly spaced values between 0 and 10.\
+📚 Reference:
+- https://justinbois.github.io/bootcamp/2017/lessons/l22_more_matplotlib.html
+- https://numpy.org/doc/stable/reference/generated/numpy.linspace.html
+
+4. **Size and Plotting**
+- `figsize=()` sets the size of the figure.
+- `plt.hist` function will read the array and produce a histogram.
+- The `bins` parameter in `plt.hist()` determines how many intervals (bins) the data range is divided into. 
+- `alpha=0.6' makes the bars semi-transparent.
+- `plt.plot` plots the function ℎ(𝑥)=𝑥3 and also adds the line in dark red + linewidth.\
+📚 Reference:
+- https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html
+- https://www.w3schools.com/python/matplotlib_histograms.asp
+- https://stackoverflow.com/questions/332289/how-do-i-change-the-size-of-figures-drawn-with-matplotlib
+- https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html
+- https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.hist.html
+- https://www.stratascratch.com/blog/how-to-create-a-matplotlib-histogram/
+- https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.plot.html
+
+5. **Labels**
+-  Labels are added for the graph legend, title, x and y axes, plot distinction.\
+📚 Reference:
+- https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.title.html
+- https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xlabel.html
+- https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.legend.html
+- https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.grid.html
+
+6. **Output and Saving**
+- `plt.savefig` saves the plot as a PNG file named plottask.png with a resolution of 300 dots per inch.
+- `plt.show()` displays the plot window with histogram.
+- The image is also pushed to the repository.\
+📚 Reference:
+- https://stackoverflow.com/questions/332289/how-do-i-change-the-size-of-figures-drawn-with-matplotlib
+- https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.show.html
+
+![Plot from plottask.py](plottask.png)
 
